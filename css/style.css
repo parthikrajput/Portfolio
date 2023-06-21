@@ -48,7 +48,7 @@ body {
 .navbar ul li a{
     font-size: 20px;
     color: var(--secondary-color);
-    margin-left: 2rem;
+    margin-left: 24px;
     transition: .3s;
 }
 .navbar ul li a:hover {
@@ -64,37 +64,34 @@ body {
     color: var(--primary-color);
 }
 .toggle-button{
-    width: 40px;
-    height: 40px;
-    background-color: var(--primary-color);
-    border: 1px solid var(--heading-color);
     color: var(--secondary-color);
-    border-radius: 5px;
-    text-align: center;
-    line-height: 40px;
     display: none;
+}
+.toggle-button i{
+    font-size: 24px;
 }
 @media (max-width: 991.99px) {
     nav {
         box-shadow: rgba(222, 168, 20, 0.7) 0px 1px 4px;
     }
     nav {
-        opacity: 0;
-        visibility: hidden;
         width: 100%;
         top: 100%;
         position: relative;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
-    nav{
+    nav.navbar{
         display: none;
     }
+    
     .toggle-button{
         display: block;
     }
-    nav ul li {
+    nav ul{
         flex-direction: column;
+    }
+    nav ul li {
         width: 100%;
         padding: 14px 20px;
         font-weight: 500;
@@ -111,17 +108,13 @@ body {
         display: block;
         transform: translateY(0px);
         left: 0;
-        opacity: 1;
-        visibility: visible;
-        
     }
     nav.open-menu ul{
-        flex-direction: column;
         position: absolute;
-        width: 100%;
+        width: 60%;
         height: 100%;
-        top: 40px;
-       left: 75%;
+        top: 35px;
+        left: 70%;
     }
     .home-img img{
         display: none;
